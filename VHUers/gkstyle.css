@@ -1,0 +1,214 @@
+body {
+  background-image: url(bbq.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-nav-bg {
+  background-color: rgba(95, 95, 95, 0.089);
+  margin-bottom: 20px;
+}
+
+.custom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  height: 70px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.box {
+  border: 1px solid black;
+}
+
+/* Các nút điều khiển carousel */
+#gameCarousel .carousel-control-prev,
+#gameCarousel .carousel-control-next {
+  width: 5%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#gameCarousel .carousel-control-prev img,
+#gameCarousel .carousel-control-next img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border: 5px solid rgb(255, 102, 0);
+  border-radius: 7px;
+}
+
+.carousel-container>.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.content-box {
+  background-image: url(vector.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px 20px;
+  max-width: 1100px;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+
+.left-img img,
+.right-img-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.download-buttons img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.text-box {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .text-box h6 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-box {
+    padding: 35px 60px;
+  }
+}
+
+.platform-wrapper {
+  position: relative;
+}
+
+/* Platform hover hiệu ứng scale toàn bộ (ảnh + ribbon) */
+.platform-link {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.platform-link:hover {
+  transform: scale(1.05);
+}
+
+.platform-link:active {
+  transform: scale(0.97);
+}
+
+.platform-link img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ribbon-triangle {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 45px solid #c0392b;
+  border-left: 45px solid transparent;
+  z-index: 3;
+}
+
+.ribbon-triangle span {
+  position: absolute;
+  top: -35px;
+  right: 0px;
+  transform: rotate(45deg);
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.footer {
+  background: linear-gradient(to right, #1f1f1f, #2b2b2b);
+  font-size: 15px;
+  border-top: 4px solid #ffa500;
+}
+
+.footer h5 {
+  color: #ffa500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffd700 !important;
+}
+
+.features .item {
+  padding: 35px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features .item h4 {
+  font-size: 17px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.features .item .image {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  text-align: center;
+  line-height: 90px;
+  background-color: #0071f8;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.features .item:hover .image {
+  background-color: #ee626b;
+}
